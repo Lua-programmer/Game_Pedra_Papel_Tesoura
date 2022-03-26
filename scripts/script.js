@@ -4,6 +4,91 @@ let jogador2 = document.querySelectorAll('.jogador2 div > img');
 jogador1_Opt = "";
 jogador2_Opt = "";
 
+//Lógica para validar a vitória
+function validarVitoria(){
+    let vencedor = document.querySelector('.vencedor');
+    let perguntaUsuario = document.querySelector('.perguntaUsuario');
+    let jogadores = document.querySelector('#jogadores');
+
+    if(jogador1_Opt == "pedra"){
+        if(jogador2_Opt == "pedra"){
+            vencedor.innerHTML = "O jogo empatou";
+            setTimeout(() => {
+                perguntaUsuario.style.display = "block";
+                jogadores.classList.add("ocultar");
+            }, 1000);
+
+        }else if(jogador2_Opt == "papel"){
+            vencedor.innerHTML = "A máquina ganhou";
+            setTimeout(() => {
+                perguntaUsuario.style.display = "block";
+                jogadores.classList.add("ocultar");
+            }, 1000);
+
+        }else if(jogador2_Opt == "tesoura"){
+            vencedor.innerHTML = "Você ganhou";
+            setTimeout(() => {
+                perguntaUsuario.style.display = "block";
+                jogadores.classList.add("ocultar");
+            }, 1000);
+        }
+    }
+
+    if(jogador1_Opt == "papel"){
+        if(jogador2_Opt == "pedra"){
+            vencedor.innerHTML = "Você ganhou";
+            setTimeout(() => {
+                perguntaUsuario.style.display = "block";
+                jogadores.classList.add("ocultar");
+            }, 1000);
+
+        }else if(jogador2_Opt == "papel"){
+            vencedor.innerHTML = "O jogo empatou";
+            setTimeout(() => {
+                perguntaUsuario.style.display = "block";
+                jogadores.classList.add("ocultar");
+            }, 1000);
+
+        }else if(jogador2_Opt == "tesoura"){
+            vencedor.innerHTML = "A máquina ganhou";
+            setTimeout(() => {
+                perguntaUsuario.style.display = "block";
+                jogadores.classList.add("ocultar");
+            }, 1000);
+        }
+    }
+
+    if(jogador1_Opt == "tesoura"){
+        if(jogador2_Opt == "pedra"){
+            vencedor.innerHTML = "A máquina ganhou";
+            setTimeout(() => {
+                perguntaUsuario.style.display = "block";
+                jogadores.classList.add("ocultar");
+            }, 1000);
+
+        }else if(jogador2_Opt == "papel"){
+            vencedor.innerHTML = "Você ganhou";
+            setTimeout(() => {
+                perguntaUsuario.style.display = "block";
+                jogadores.classList.add("ocultar");
+            }, 1000);
+
+        }else if(jogador2_Opt == "tesoura"){
+            vencedor.innerHTML = "O jogo empatou";
+            setTimeout(() => {
+                perguntaUsuario.style.display = "block";
+                jogadores.classList.add("ocultar");
+            }, 1000);
+        }
+    }
+
+    let carregarPagina = document.querySelector('#sim');
+        carregarPagina.addEventListener("click", function() {
+
+        location.reload();
+    });
+}
+
 //Lógica para o lance do jogador 2(máquina), de forma aleatória
 function jogadaMaquina(){
     let rand = Math.floor(Math.random()*3);
@@ -14,6 +99,8 @@ function jogadaMaquina(){
             jogador2_Opt = jogador2[i].getAttribute('opt');
         }
     }
+
+    validarVitoria();
 }
 
 //Lógica para o lance do jogador 1(usuário)

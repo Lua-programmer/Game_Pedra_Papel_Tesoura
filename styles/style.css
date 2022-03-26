@@ -7,13 +7,14 @@
 }
 
 header {
+    background-color: #EF5480;
+    padding-top: 2rem;
     height: 4rem;
 }
 
 .titulo {
     display: flex;
     justify-content: center;
-    margin: 2rem auto;
 }
 
 .titulo h2 {
@@ -21,6 +22,13 @@ header {
     font-size: 2rem;
     transition: 2s linear;
     font-weight: 700;
+    color: #ffffff;
+}
+
+hr{
+    height: .1rem;
+    border: none;
+    background-color: #EF5480;
 }
 
 .jogadores {
@@ -29,11 +37,80 @@ header {
     justify-content: space-evenly;
 }
 
+
 .jogador1 img,
 .jogador2 img {
     width: 15rem;
     cursor: pointer;
     opacity: 0.3;
+}
+
+.ocultar{
+    pointer-events: none;
+    transition: linear 1s;
+    opacity: 0;
+}
+
+@media (max-width : 414px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 14rem;
+    }
+}
+
+@media (max-width : 390px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 12rem;
+    }
+}
+
+@media (max-width : 360px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 10rem;
+    }
+
+    .titulo h2{
+        font-size: 1.5rem;
+    }
+}
+
+.vencedor {
+    font-size: 1.5rem;
+}
+
+.vencedor,
+.perguntaUsuario {
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+    position: fixed; 
+}
+
+.vencedor h3,
+.perguntaUsuario h4 {
+    color: #2D3047;
+}
+
+.perguntaUsuario {
+    margin-top: 2rem;
+    transition: 2s; 
+    display: none;
+}
+
+
+.botoes {
+    margin-top: 1rem;
+}
+
+button{
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #03B5AA;
+    font-size: 1rem;
+    color: #ffffff;
 }
 
 
