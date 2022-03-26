@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
+}
+
+header {
+    height: 4rem;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.titulo h2 {
+    margin-left: .6rem;
+    font-size: 2rem;
+    transition: 2s linear;
+    font-weight: 700;
+}
+
+.jogadores {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.jogador1 img,
+.jogador2 img {
+    width: 15rem;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+
