@@ -76,6 +76,38 @@ hr{
     }
 }
 
+@media (max-width : 320px) {
+    .jogadores {
+        display: flex;
+        flex-direction: column;
+    }
+    .jogador1 img,
+    .jogador2 img {
+        width: 6rem;
+    }
+
+    .jogador1,
+    .jogador2 {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem 5rem;
+    }
+
+    #header{
+        height: 2.2rem;
+    }
+    .titulo h2{
+        margin-top: -1rem;
+        font-size: 1.5rem;
+    }
+
+    .vencedor h3,
+    .perguntaUsuario h4 {
+        color: #2D3047;
+        font-size: 1rem;
+    }
+}
+
 .vencedor {
     font-size: 1.5rem;
 }
