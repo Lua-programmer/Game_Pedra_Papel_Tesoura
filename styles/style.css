@@ -145,4 +145,21 @@ button{
     color: #ffffff;
 }
 
+.redes-sociais {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03B5AA;
+    position: absolute;
+    bottom: 0;
+    transition: 2s ease-in;
+    /* display: none; */
+}
+
+.redes-sociais a {
+    margin-left: 1rem;
+    text-decoration: none;
+}
 

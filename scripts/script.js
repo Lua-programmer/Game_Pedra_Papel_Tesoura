@@ -112,3 +112,5 @@ for(var i = 0; i < jogador1.length; i++){
         jogadaMaquina();
     })
 }
+
+
