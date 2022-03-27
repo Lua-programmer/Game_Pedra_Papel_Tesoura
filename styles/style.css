@@ -154,10 +154,10 @@ button{
     }
 }
 
-@media (max-width : 390px) { 
+@media (max-width : 391px) { 
     .jogador1 img,
     .jogador2 img {
-        width: 12rem;
+        width: 9rem;
     }
     
     .texto  h2 {
@@ -166,7 +166,7 @@ button{
 }
 
 
-@media (max-width : 378px) { 
+@media (max-width : 381px) { 
     .jogador1 img,
     .jogador2 img {
         width: 9rem;
@@ -188,7 +188,7 @@ button{
 @media (max-width : 360px) { 
     .jogador1 img,
     .jogador2 img {
-        width: 10rem;
+        width: 7rem;
     }
 
     .titulo h2{
