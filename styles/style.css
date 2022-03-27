@@ -62,97 +62,6 @@ hr{
     opacity: 0;
 }
 
-@media (max-width : 1024px) { 
-    .jogador1 img,
-    .jogador2 img {
-        width: 8rem;
-    }
-
-    .titulo h2{
-        margin-top: -1rem;
-        font-size: 2rem;
-    }
-
-    .vencedor h3,
-    .perguntaUsuario h4 {
-        color: #2D3047;
-        font-size: .7rem;
-    }
-}
-
-@media (max-width : 414px) { 
-    .jogador1 img,
-    .jogador2 img {
-        width: 9rem;
-    }
-}
-
-@media (max-width : 390px) { 
-    .jogador1 img,
-    .jogador2 img {
-        width: 12rem;
-    }
-}
-
-
-@media (max-width : 378px) { 
-    .jogador1 img,
-    .jogador2 img {
-        width: 9rem;
-    }
-    .vencedor h3{
-        font-size: .7rem;
-    }
-
-    .button {
-        padding: -1rem .5rem;
-    }
-    
-}
-
-@media (max-width : 360px) { 
-    .jogador1 img,
-    .jogador2 img {
-        width: 10rem;
-    }
-
-    .titulo h2{
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width : 320px) {
-    .jogadores {
-        display: flex;
-        flex-direction: column;
-    }
-    .jogador1 img,
-    .jogador2 img {
-        width: 6rem;
-    }
-
-    .jogador1,
-    .jogador2 {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 1rem 5rem;
-    }
-
-    #header{
-        height: 2.2rem;
-    }
-    .titulo h2{
-        margin-top: -1rem;
-        font-size: 1.5rem;
-    }
-
-    .vencedor h3,
-    .perguntaUsuario h4 {
-        color: #2D3047;
-        font-size: 1rem;
-    }
-}
-
 .vencedor {
     font-size: 1.5rem;
 }
@@ -219,4 +128,109 @@ button{
 .texto h2 {
     font-size: 5rem;
     display: none;
+}
+
+@media (max-width : 1024px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 8rem;
+    }
+
+    .titulo h2{
+        margin-top: -1rem;
+        font-size: 2rem;
+    }
+
+    .vencedor h3,
+    .perguntaUsuario h4 {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width : 414px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 9rem;
+    }
+}
+
+@media (max-width : 390px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 12rem;
+    }
+    
+    .texto  h2 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width : 378px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 9rem;
+    }
+    .vencedor h3{
+        font-size: .7rem;
+    }
+
+    .button {
+        padding: -1rem .5rem;
+    }
+
+    .texto  h2 {
+        font-size: 3rem;
+    }
+    
+}
+
+@media (max-width : 360px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 10rem;
+    }
+
+    .titulo h2{
+        font-size: 1.5rem;
+    }
+
+    .texto  h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width : 320px) {
+    .jogadores {
+        display: flex;
+        flex-direction: column;
+    }
+    .jogador1 img,
+    .jogador2 img {
+        width: 6rem;
+    }
+
+    .jogador1,
+    .jogador2 {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem 5rem;
+    }
+
+    #header{
+        height: 2.2rem;
+    }
+    .titulo h2{
+        margin-top: -1rem;
+        font-size: 1.5rem;
+    }
+
+    .vencedor h3,
+    .perguntaUsuario h4 {
+        font-size: 1rem;
+    }
+
+    .texto  h2 {
+        font-size: 3rem;
+    }
 }
