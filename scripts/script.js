@@ -113,4 +113,19 @@ for(var i = 0; i < jogador1.length; i++){
     })
 }
 
+//Lógica para quando o usuário apertar o botão não
 
+let nao = document.getElementById('nao').addEventListener('click', ()=>{
+    let body = document.querySelector('body');
+    let adeus = document.querySelector('.js-adeus');
+    let ateBreve = document.querySelector('.texto h2');
+    let titulo = document.querySelector('.titulo');
+    let footer = document.querySelector('.redes-sociais');
+    body.style.backgroundColor = "#EF5480";
+    adeus.style.display = "none";
+    titulo.style.display = "none";
+    footer.style.backgroundColor = "#EF5480"
+    setTimeout(() => {
+        ateBreve.style.display = "block";
+    }, 1000);
+})

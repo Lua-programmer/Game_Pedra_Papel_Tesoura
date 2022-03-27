@@ -40,21 +40,46 @@ hr{
 
 .jogador1 img,
 .jogador2 img {
-    width: 15rem;
+    width: 10rem;
     cursor: pointer;
     opacity: 0.3;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.jogador1 img:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
 }
 
 .ocultar{
     pointer-events: none;
-    transition: linear 1s;
+    transition: linear .4s;
     opacity: 0;
+}
+
+@media (max-width : 1024px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 8rem;
+    }
+
+    .titulo h2{
+        margin-top: -1rem;
+        font-size: 2rem;
+    }
+
+    .vencedor h3,
+    .perguntaUsuario h4 {
+        color: #2D3047;
+        font-size: .7rem;
+    }
 }
 
 @media (max-width : 414px) { 
     .jogador1 img,
     .jogador2 img {
-        width: 14rem;
+        width: 9rem;
     }
 }
 
@@ -63,6 +88,22 @@ hr{
     .jogador2 img {
         width: 12rem;
     }
+}
+
+
+@media (max-width : 378px) { 
+    .jogador1 img,
+    .jogador2 img {
+        width: 9rem;
+    }
+    .vencedor h3{
+        font-size: .7rem;
+    }
+
+    .button {
+        padding: -1rem .5rem;
+    }
+    
 }
 
 @media (max-width : 360px) { 
@@ -155,7 +196,6 @@ button{
     position: absolute;
     bottom: 0;
     transition: 2s ease-in;
-    /* display: none; */
 }
 
 .redes-sociais a {
@@ -163,3 +203,16 @@ button{
     text-decoration: none;
 }
 
+.ate-breve{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    padding-bottom: 5rem;
+    margin-top: -16rem;
+}
+
+.texto h2 {
+    font-size: 5rem;
+    display: none;
+}
